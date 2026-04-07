@@ -176,18 +176,11 @@ export default function SettingsPage() {
                     </DialogDescription>
                   </DialogHeader>
                   <DialogFooter className="gap-2">
-                    <DialogClose asChild>
-                      <Button variant="outline" className="border-white/[0.08]">
-                        Cancel
-                      </Button>
+                    <DialogClose render={<Button variant="outline" className="border-white/[0.08]" />}>
+                      Cancel
                     </DialogClose>
-                    <DialogClose asChild>
-                      <Button
-                        onClick={confirmLiveMode}
-                        className="bg-red-600 hover:bg-red-500 text-white border-0"
-                      >
-                        Enable Live Trading
-                      </Button>
+                    <DialogClose render={<Button onClick={confirmLiveMode} className="bg-red-600 hover:bg-red-500 text-white border-0" />}>
+                      Enable Live Trading
                     </DialogClose>
                   </DialogFooter>
                 </DialogContent>
